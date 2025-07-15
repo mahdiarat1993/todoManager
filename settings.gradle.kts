@@ -14,7 +14,7 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "TodoManager"
+rootProject.name = "todomanager"
 
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
@@ -24,6 +24,12 @@ include(":core:model")
 include(":core:ui")
 include(":core:database")
 include(":core:common")
-include(":lint")
 include(":core:domain")
-include(":feature:home")
+include(":core:datastore")
+include(":core:designsystem")
+
+include(":lint")
+
+//include(":feature:home")
+//include(":feature:dailyTask")
+include(":feature:splash")

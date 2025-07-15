@@ -16,7 +16,6 @@
 
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
 import com.android.build.gradle.LibraryExtension
-import ir.aratsoft.convention.configureFlavors
 import ir.aratsoft.convention.configureGradleManagedDevices
 import ir.aratsoft.convention.configureKotlinAndroid
 import ir.aratsoft.convention.configurePrintApksTask
@@ -40,7 +39,7 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 defaultConfig.targetSdk = 35
                 defaultConfig.testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
                 testOptions.animationsDisabled = true
-                configureFlavors(this)
+//                configureFlavors(this)
                 configureGradleManagedDevices(this)
                 // The resource prefix is derived from the module name,
                 // so resources inside ":core:module1" must be prefixed with "core_module1_"
@@ -53,8 +52,8 @@ class AndroidLibraryConventionPlugin : Plugin<Project> {
                 disableUnnecessaryAndroidTests(target)
             }
             dependencies {
-                "androidTestImplementation"(libs.findLibrary("kotlin.test").get())
-                "testImplementation"(libs.findLibrary("kotlin.test").get())
+//                "androidTestImplementation"(libs.findLibrary("kotlin.test").get())
+//                "testImplementation"(libs.findLibrary("kotlin.test").get())
 
                 "implementation"(libs.findLibrary("androidx.tracing.ktx").get())
             }

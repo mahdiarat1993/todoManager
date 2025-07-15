@@ -5,20 +5,25 @@ plugins {
 }
 
 android {
-    namespace = "ir.aratsoft.todomanager.core.data"
-    testOptions {
-        unitTests {
-            isIncludeAndroidResources = true
-        }
+    namespace = "ir.aratsoft.core.data"
+    defaultConfig {
+        consumerProguardFiles("consumer-rules.pro")
     }
 }
 
 dependencies {
     api(projects.core.common)
     api(projects.core.database)
-    api(projects.core.domain)
+    api(libs.androidx.dataStore)
 
-
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(projects.core.common)
+    implementation(libs.androidx.datastore.preferences)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+//
     testImplementation(libs.kotlinx.coroutines.test)
-    testImplementation(libs.kotlinx.serialization.json)
+    testImplementation(libs.hilt.android.testing)
+    testImplementation(libs.kotlin.test)
+//    testImplementation(libs.kotlinx.serialization.json)
+
 }

@@ -12,6 +12,6 @@ interface TaskCategoryDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertTaskCategoryAll(taskCategory: List<TaskCategoryEntity>)
 
-    @Query("SELECT * FROM taskCategory")
+    @Query("SELECT * FROM task_Category")
     suspend fun getAllTaskCategory(): List<TaskCategoryEntity>
 }

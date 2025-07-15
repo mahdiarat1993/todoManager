@@ -4,7 +4,7 @@ plugins {
     `kotlin-dsl`
     alias(libs.plugins.android.lint)
 }
-group = "ir.aratsoft.todomanager.buildlogic"
+group = "ir.aratsoft.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17

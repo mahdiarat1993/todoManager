@@ -3,7 +3,6 @@ package ir.aratsoft.core.data.repository
 import ir.aratsoft.core.data.model.asEntity
 import ir.aratsoft.database.dao.dailyTask.DailyTaskDao
 import ir.aratsoft.database.model.dailyTask.asExternalModel
-import ir.aratsoft.domain.repository.DailyTaskRepository
 import ir.aratsoft.model.DailyTask
 import javax.inject.Inject
 
