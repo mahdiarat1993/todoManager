@@ -12,6 +12,6 @@ interface TaskDifficultyDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertTaskDifficulty(taskDifficulty: List<TaskDifficultyEntity>)
 
-    @Query("SELECT * FROM taskdifficulty")
+    @Query("SELECT * FROM task_difficulty")
     suspend fun getTaskDifficultyList(): List<TaskDifficultyEntity>
 }

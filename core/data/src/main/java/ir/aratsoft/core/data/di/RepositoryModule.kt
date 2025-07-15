@@ -4,7 +4,9 @@ import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import ir.aratsoft.domain.repository.DailyTaskRepository
+import ir.aratsoft.core.data.repository.AppDataRepository
+import ir.aratsoft.core.data.repository.AppDataRepositoryImpl
+import ir.aratsoft.core.data.repository.DailyTaskRepository
 import ir.aratsoft.core.data.repository.DailyTaskRepositoryImpl
 
 @Module
@@ -14,6 +16,10 @@ abstract class RepositoryModule{
     @Binds
     abstract fun bindDailyTaskRepository(
         dailyTaskRepositoryImpl: DailyTaskRepositoryImpl
-    ): ir.aratsoft.domain.repository.DailyTaskRepository
+    ): DailyTaskRepository
 
+    @Binds
+    abstract fun bindAppDataRepository(
+        appDataRepositoryImpl: AppDataRepositoryImpl
+    ): AppDataRepository
 }

@@ -12,6 +12,6 @@ interface TaskPriorityDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertTaskPriority(taskPriority: List<TaskPriorityEntity>)
 
-    @Query("SELECT * FROM taskpriority")
+    @Query("SELECT * FROM task_priority")
     suspend fun getTaskPriorityList(): List<TaskPriorityEntity>
 }

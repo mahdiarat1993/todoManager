@@ -5,12 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "ir.aratsoft.todomanager.core.data"
-    testOptions {
-        unitTests {
-            isIncludeAndroidResources = true
-        }
-    }
+    namespace = "ir.aratsoft.domain"
 }
 
 dependencies {
