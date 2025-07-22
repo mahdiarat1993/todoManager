@@ -3,7 +3,16 @@
     <style name="Theme.BaseSolution" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
+<!--        <item name="android:windowSplashScreenAnimatedIcon">@null</item>-->
 <!--        <item name="android:windowBackground">?attr/colorSurface</item>-->
         <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="Theme.App.Transparent" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:background">@android:color/background_light</item>
     </style>
 </resources>

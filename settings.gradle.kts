@@ -1,16 +1,28 @@
+
 pluginManagement {
     includeBuild("build-logic")
     repositories {
-        gradlePluginPortal()
-        google()
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
         mavenCentral()
+        gradlePluginPortal()
     }
 }
 dependencyResolutionManagement {
-
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositoriesMode = RepositoriesMode.FAIL_ON_PROJECT_REPOS
     repositories {
-        google()
+        google {
+            content {
+                includeGroupByRegex("com\\.android.*")
+                includeGroupByRegex("com\\.google.*")
+                includeGroupByRegex("androidx.*")
+            }
+        }
         mavenCentral()
     }
 }
@@ -18,18 +30,17 @@ rootProject.name = "todomanager"
 
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
+include(":lint")
+
 include(":app")
+
 include(":core:data")
 include(":core:model")
 include(":core:ui")
 include(":core:database")
-include(":core:common")
-include(":core:domain")
-include(":core:datastore")
 include(":core:designsystem")
+include(":core:domain")
 
-include(":lint")
-
-//include(":feature:home")
-//include(":feature:dailyTask")
 include(":feature:splash")
+include(":feature:onboarding")
+include(":core:common")

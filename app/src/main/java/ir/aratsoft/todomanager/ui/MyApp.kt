@@ -1,24 +1,42 @@
 package ir.aratsoft.todomanager.ui
 
-import androidx.compose.material3.Surface
+import android.content.Context
+import android.content.res.Configuration
 import androidx.compose.material3.adaptive.WindowAdaptiveInfo
 import androidx.compose.material3.adaptive.currentWindowAdaptiveInfo
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import ir.aratsoft.todomanager.MainActivityViewModel
-import ir.aratsoft.todomanager.core.designsystem.theme.AppTheme
+import androidx.compose.ui.platform.LocalContext
+import androidx.lifecycle.viewmodel.compose.viewModel
+import ir.aratsoft.todomanager.core.designsystem.component.NiaBackground
 import ir.aratsoft.todomanager.navigation.AppNavHost
+import ir.aratsoft.todomanager.util.LanguageUtils
+import java.util.Locale
+import androidx.compose.runtime.*
 
 @Composable
 fun MyApp(
     appState: AppState,
     modifier: Modifier = Modifier,
     windowAdaptiveInfo: WindowAdaptiveInfo = currentWindowAdaptiveInfo(),
+    language : String
+
 ){
-    Surface {
+//    val context = LocalContext.current
+
+//    val currentLang by remember { mutableStateOf(Locale.getDefault().language) }
+
+//    LaunchedEffect(language) {
+//        LanguageUtils.applyAppLanguage(context, language)
+//    }
+
+    NiaBackground(modifier = modifier) {
+
         AppNavHost(appState)
+
     }
 }

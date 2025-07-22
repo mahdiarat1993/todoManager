@@ -1,8 +1,5 @@
 plugins {
-    alias(libs.plugins.basesolution.android.library)
-}
-android {
-    namespace = "ir.aratsoft.model"
+    alias(libs.plugins.basesolution.jvm.library)
 }
 dependencies {
 //    api(libs.kotlinx.datetime)

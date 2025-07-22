@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_onboarding_start">start</string>
+    <string name="feature_onboarding_first_slider_title">Stay on top of your daily tasks</string>
+    <string name="feature_onboarding_first_slider_desc">Plan your day, set your priorities, and never miss a task again. We are here to keep you focused and organized.</string>
+    <string name="feature_onboarding_second_slider_title">Never forget important dates</string>
+    <string name="feature_onboarding_second_slider_desc">From birthdays to anniversaries – get friendly reminders so you always stay connected with loved ones.</string>
+    <string name="feature_onboarding_third_slider_title">Take your meds on time</string>
+    <string name="feature_onboarding_third_slider_desc">Track your medications and get timely alerts to take them. Your health is our priority.</string>
+    <string name="feature_onboarding_next">next</string>
+    <string name="feature_onboarding_sign_in">Sing in</string>
+    <string name="feature_onboarding_for_enter_login_or_sign_in">for enter login or sign in</string>
+    <string name="feature_onboarding_login_as_guest">Login as Guest</string>
+    <string name="feature_onboarding_sign_in_whith_google">Sign in with Google</string>
+</resources>

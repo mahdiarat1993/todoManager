@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.implementation
+
 plugins {
     alias(libs.plugins.basesolution.android.application)
     alias(libs.plugins.basesolution.android.application.compose)
@@ -41,6 +43,10 @@ android {
         compose = true
     }
 
+    androidResources{
+        generateLocaleConfig = true
+    }
+
 }
 
 dependencies {
@@ -48,14 +54,16 @@ dependencies {
 //    implementation(projects.feature.dailyTask)
 //    implementation(projects.feature.home)
     implementation(projects.feature.splash)
+    implementation(projects.feature.onboarding)
 
     implementation(projects.core.common)
     implementation(projects.core.ui)
     implementation(projects.core.designsystem)
     implementation(projects.core.data)
     implementation(projects.core.model)
-    implementation(projects.core.datastore)
+//    implementation(projects.core.datastore)
 
+    implementation (libs.androidx.appcompat)
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.material3.adaptive)

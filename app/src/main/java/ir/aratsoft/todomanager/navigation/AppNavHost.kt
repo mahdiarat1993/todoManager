@@ -3,8 +3,10 @@ package ir.aratsoft.todomanager.navigation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
-import ir.aratsoft.splash.navigation.SplashRoute
-import ir.aratsoft.splash.navigation.splashScreen
+import ir.aratsoft.todomanager.feature.splash.navigation.SplashRoute
+import ir.aratsoft.todomanager.feature.splash.navigation.splashScreen
+import ir.aratsoft.todomanager.feature.onboarding.navigation.navigateToOnboarding
+import ir.aratsoft.todomanager.feature.onboarding.navigation.onboardingScreen
 import ir.aratsoft.todomanager.ui.AppState
 
 @Composable
@@ -21,9 +23,11 @@ fun AppNavHost(
     ) {
 
         splashScreen(
-//            navigateToHome = navController::
+            onNavigateToOnboarding = navController::navigateToOnboarding
+//            onNavigateToHome = navController.popBackStack()
         )
 
+        onboardingScreen()
 //        composable("splash") {
 //            SplashScreen(
 ////                onNavigateNext = {

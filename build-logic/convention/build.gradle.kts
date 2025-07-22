@@ -3,8 +3,9 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     `kotlin-dsl`
     alias(libs.plugins.android.lint)
+    alias(libs.plugins.kotlin.jvm)
 }
-group = "ir.aratsoft.buildlogic"
+group = "ir.aratsoft.todomanager.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_17

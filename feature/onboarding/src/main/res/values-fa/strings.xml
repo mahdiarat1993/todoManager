@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feature_onboarding_start">شروع</string>
+    <string name="feature_onboarding_first_slider_title">کارهای روزمره‌تو مدیریت کن</string>
+    <string name="feature_onboarding_first_slider_desc">برنامه‌ی روزتو بچین، اولویت‌هاتو مشخص کن و دیگه هیچ کاری رو فراموش نکن! ما اینجاییم تا تمرکزت رو حفظ کنی.</string>
+    <string name="feature_onboarding_second_slider_title">مناسبت‌های مهم رو فراموش نکن</string>
+    <string name="feature_onboarding_second_slider_desc">از تولد تا سالگرد، با یادآوری‌های دوستانه همیشه در کنار عزیزانت بمون.</string>
+    <string name="feature_onboarding_third_slider_title">قرص‌هات رو سر وقت بخور</string>
+    <string name="feature_onboarding_third_slider_desc">داروهات رو ثبت کن و به‌موقع یادآوری بگیر. سلامتیت برامون مهمه.</string>
+    <string name="feature_onboarding_next">next</string>
+    <string name="feature_onboarding_sign_in">ورود</string>
+    <string name="feature_onboarding_for_enter_login_or_sign_in">برای استفاده از اپ ورود یا ثبت نام کنید</string>
+    <string name="feature_onboarding_login_as_guest">ورود به عنوان مهمان</string>
+    <string name="feature_onboarding_sign_in_whith_google">ورود با اکانت جیمیل</string>
+</resources>
